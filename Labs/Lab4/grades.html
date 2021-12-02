@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grade
+
+        grade = prompt("Please enter a grade(A,B,C,D,E or F)").charAt(0).toUpperCase()
+
+        switch(grade){
+            case "A":
+                alert("Good job")
+                break;
+            case "B":
+                alert("Pretty good")
+                break;
+            case "C":
+                alert("Passed")
+                break;
+            case "D":
+                alert("Not so good")
+                break;
+            case "E":
+                alert("Failed")
+                break;            
+            default:
+                alert("Unknown grade")
+                break;
+
+        }
+    </script>
+</body>
+</html>

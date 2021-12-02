@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" href="task3.css">
+</head>
+<body style="background-color: #3C72BE;">
+<div id="form">
+  <h2 class="header">Student Form</h2>
+  <div>
+    <form>
+      <input type="text" name="First Name" placeholder="First Name"></input>
+	  <input type="text" name="Surname" placeholder="Surname"></input>
+	  <input type="text" name="Email" placeholder="Email"></input>
+	  <input type="text" name="Website" placeholder="Website"></input>
+	  <input type="text" name="Date of Birth" placeholder="DD/MM/YYYY"></input>
+	  <div class="radiobox">
+	  <label>Registered?</label>
+	  <br> <br>
+      <input type="radio" id="registered" name="registered" value="registered">
+	  <label for="registered">Registered</label>
+	  <br>
+	  <input type="radio" id="notregistered" name="registered" value="notregistered">
+	  <label for="notregistered"> Not Registered </label>
+	  </div>
+	  <br>
+		<label> Select Year: </label>
+		<select name="schoolyear">
+		<option value="firstYear">First Year</option>
+		<option value="secondYear">Second Year</option>
+		<option value="thirdYear">Third Year</option>
+		<option value="fourthYear">Final Year</option>
+		</select>
+	  </div>
+	  <label>Select the course (s) taken: </label>
+	  <br><br>
+	  <input type="checkbox">
+	  <label>Degree in Software Engineering</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Degree in IT Management</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Degree in Cyber Security</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Degree in Computer Science</label>
+      <button type="submit">Send Form</button>
+	  <button type="reset">Clear Form</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

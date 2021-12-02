@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var currentNum=0
+        var inputs=0
+        var validinputs=0
+        var passes=0
+        var fails=0
+        
+        do{
+            currentNum=parseInt(prompt("Enter grade(0-100)"))
+            if(currentNum>=0 && currentNum<=100){
+                validinputs++
+                if(currentNum>=40){
+                    passes++
+                }
+                else if(currentNum<40){
+                    fails++
+                }
+            }
+            inputs++
+
+        }
+        while(currentNum!=-1)
+
+        document.write("Total number of inputs: " + inputs)
+        document.write("<br>Number of valid inputs: " + validinputs)
+        document.write("<br>Student passed: " + passes)
+        document.write("<br>Students failed: " + fails)
+
+    </script>
+</body>
+</html>

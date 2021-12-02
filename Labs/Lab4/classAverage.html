@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var currentNum=0
+        var average=0
+        var count=0
+
+        do{
+            currentNum=parseInt(prompt("Enter grade"))
+            if(count==0 && currentNum==-1){
+                alert("You exited without entering any numbers")
+                break;
+            }
+            average+=parseInt(currentNum)
+            count++
+        }
+        while(currentNum != -1)
+
+        average=average/count
+        document.write(average)
+
+    </script>
+</body>
+</html>

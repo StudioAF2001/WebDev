@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="task4.css">
+</head>
+<body style="background-color: #3C72BE;">
+<div id="form">
+  <h2 class="header">Customer Form</h2>
+  <h3> Personal Details </h3>
+  <div>
+    <form>
+      <input type="text" name="First Name" placeholder="First Name"></input>
+	  <input type="text" name="Surname" placeholder="Surname"></input>
+      <input type="number" name="Phone" placeholder="Phone Number"></input>
+	  <input type="text" name="Email" placeholder="Email"></input>
+	  <input type="text" name="Website" placeholder="Website"></input>
+	  <input type="text" name="Date of Birth" placeholder="DD/MM/YYYY"></input>
+	  <div class="radiobox">
+	  <label>Current Customer</label>
+	  <br> <br>
+      <input type="radio" id="current" name="current" value="current">
+	  <label for="current">Current</label>
+	  <br>
+	  <input type="radio" id="notcurrent" name="current" value="notcurrent">
+	  <label for="notcurrent"> Not Current </label>
+	  </div>
+	  <h3> Other Details </h3>
+	  <input type="number" name="Number of Children" placeholder="Number of Children"></input>
+	  <div class="slidecontainer">
+	  <label> Satisfaction with Company </label>
+	  <input type="range" min="1" max="10" value="1" id="slider">
+	  </div>
+	  <label>Have you got the following?</label>
+	  <br><br>
+	  <input type="checkbox">
+	  <label>Electric Cooker</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Electric Washing Machine</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Tumble Dryer</label>
+	  <br>
+	  <input type="checkbox">
+	  <label>Steam Iron</label>
+      <button type="submit">Send Form</button>
+	  <button type="reset">Clear Form</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

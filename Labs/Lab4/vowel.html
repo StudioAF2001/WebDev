@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input
+        const vowels = ["A", "E", "I", "O", "U"]
+        var running = true
+        var result
+
+        while(running){
+            input=prompt("Please enter a charcter").toUpperCase()
+            if(input.length==1){
+                result = myVowel(input)
+                if(result==true){
+                    alert("Character is a vowel")
+                }
+                else{
+                    alert("Character is not a vowel")
+                }
+                running=false
+            }
+            else{
+                alert("Please input a single character")
+            }
+        }
+
+        function myVowel(char){
+            for(let i=0;i<5;i++){
+                if(char == vowels[i]){
+                    return true
+                }
+            }
+            return false
+        }
+    </script>
+</body>
+</html>

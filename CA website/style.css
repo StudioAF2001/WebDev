@@ -1,6 +1,6 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url(./resources/background.png);
+    background-image:url(resources/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
