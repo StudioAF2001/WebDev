@@ -1,0 +1,138 @@
+<!--
+    Author      : Andrew Skelly
+    Student ID  : C00261511
+    Purpose     :
+    Date        : 13/1/2022-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+<script src="task1.js"></script>
+<div id="form">
+    <form>
+        <fieldset> <!--Fieldset to separate out personal information and feedback section -->
+            <legend>Personal Information</legend>
+            <br>
+            <div class="container">
+                <div class="box">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Name" required pattern="^[a-zA-Z ]*$">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="add">Address</label>
+                    <input type="text" id="add" name="address" placeholder="address" required>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="Date of birth" placeholder="DD/MM/YY" required>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="Number(000-000-0000)" pattern="^\d{3}-\d{3}-\d{4}$">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="email">Email address</label>
+                    <input type="text" id="email" name="email-address" placeholder="example@examplemail.com" required>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="confemail">Confirm email address</label>
+                    <input type="text" id="confemail" name="email-address" placeholder="example@examplemail.com" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <br>
+            <div class = container> <!--class to wrap around things you liked and how did you get to our site sections-->
+                <div class="box">
+                    <span><b>Things You Liked</b></span>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="Site Design">Site Design</label>
+                    <input type="checkbox" id="Site Design" name="Site Design" placeholder="Site Design">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="ease">Ease</label>
+                    <input type="checkbox" id="ease" name="ease" placeholder="ease of use">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="links">Links</label>
+                    <input type="checkbox" id="links" name="Links" placeholder="Links">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="images">Images</label>
+                    <input type="checkbox" id="images" name="images" placeholder="Images">
+                </div>
+                <br>
+            </div>
+            <br>
+
+            <div class="container">
+                <div class="box">
+                    <span><b> How did you get to our site?</b></span>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="search">Search Engine</label>
+                    <input type="radio" id="search" name="search" placeholder="Search Engine">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="site">Links from another Site</label>
+                    <input type="radio" id="site" name="site" placeholder="Other site">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="ref">Reference in a book</label>
+                    <input type="radio" id="ref" name="ref" placeholder="reference">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="other" placeholder="other">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Have anything to comment on?"></textarea>
+                </div>
+                <br>
+                <div class="box">
+                    <label for="rating">Rating</label>
+                    <select name="rating" id="rating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Send Form</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</div>
+</body>
+</html>
