@@ -30,7 +30,7 @@
                 <br>
                 <div class="box">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="Phone Number" placeholder="Number(000-000-0000)" pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/">
+                    <input type="tel" id="phone" name="Phone Number" placeholder="Number(000-000-0000)" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$">
                 </div>
                 <br>
                 <div class="box">
@@ -39,19 +39,20 @@
                 </div>
                 <br>
                 <div class="box">
-                    <label for="confemail">Confirm email address</label>
-                    <input type="text" id="confemail" name="confemail" placeholder="example@examplemail.com" required>
+                    <label id="confEmailLabel" for="confemail">Confirm email address</label>
+                    <input type="text" id="confemail" name="confemail" placeholder="example@examplemail.com" required onfocusout="validateEmail()">
+
                 </div>
                 <br>
                 <div class="box">
                     <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob" placeholder="DD/MM/YY" required>
+                    <input type="date" id="dob" name="dob" placeholder="DD/MM/YY" required oninput="validateDOB()">
                 </div>
                 <br>
                 <br>
                 <div class="box">
                     <label for="startDate">Starting Date</label>
-                    <input type="date" id="startDate" name="startDate" placeholder="DD/MM/YY" required>
+                    <input type="date" id="startDate" name="startDate" placeholder="DD/MM/YY" required oninput="validateStart()">
                 </div>
             </div>
         </fieldset>
