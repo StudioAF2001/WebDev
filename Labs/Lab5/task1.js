@@ -14,19 +14,38 @@ function validateEmail(){
     }
 }
 
-function validateDOB(){
-    let dob = document.forms["primaryForm"]["dob"].value;
-    let Birth = new Date(dob);
+function validateAge()
+{
+    let today = new Date();
 
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    let day = today.getDate();
+
+    let inp = document.getElementById('dob').value;
+    let dob = new Date(inp);
+
+    let dobYear = dob.getFullYear();
+    let dobMonth = dob.getMonth();
+    let dobDate = dob.getDate();
+
+    let age = year - dobYear;
+    let ageMonth = month - dobMonth;
+    let ageDay = day - dobDate;
+
+    if ((age === 17 && ageMonth <= 0 && ageDay <= 0) || age < 17)
+    {
+        alert("You must be over 17 to register!");
+    }
 }
 
-function validateStart(){
-    let startDate = document.forms["primaryForm"]["startDate"].value;
-    let start = new Date(startDate)
-    let today = new Date()
-
-    if(startDate < today.getDate()){
-        alert("Start date must be after today's date")
-        return false
+function validateStart()
+{
+    let inp = document.getElementById('startDate').value;
+    let startDate = new Date(inp);
+    let today = new Date();
+    if (startDate < today)
+    {
+        alert("You cannot select a start date before today's date!");
     }
 }
