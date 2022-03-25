@@ -3,8 +3,8 @@
     <body>
         <div>
             <h1>Amend/View a Student</h1>
-            <h4>Please select a student and then click the <span>amend</span> button if you wish to update</h4>
-            <div>
+			<h4>Please select a student to show details. Click Amend details up update</h4>
+			<div>
                 <?php
                     include 'listbox.php';
                 ?>
